@@ -1,0 +1,6 @@
+<h1>Stupid coaching</h1>
+<p>Ask your coach anything:</p>
+<%= form_with(url: '/answer', local: true, data: { turbo: false }) do %>
+  <%= text_field_tag(:question) %>
+  <%= submit_tag('Ask!') %>
+<% end %>
